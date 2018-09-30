@@ -1,0 +1,81 @@
+html, body{
+    height:100%;
+    margin: 0;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1%;
+}
+
+#header-container{
+
+}
+
+#center-container{
+    flex: 1;
+}
+
+#footer-container{
+
+}
+
+
+#header-left{
+
+}
+
+#header-center{
+
+}
+
+#header-right{
+
+}
+
+#main-left{
+
+}
+
+#main-center{
+
+}
+
+#main-right{
+
+}
+
+#footer-left{
+
+}
+
+#footer-center{
+
+}
+
+#footer-right{
+
+}
+
+.vertical-region{
+    display:flex;
+    flex-direction:row;
+}
+
+.horizontal-region{
+
+}
+
+.center{
+	flex: 1;
+
+}
+
+.region{
+}
