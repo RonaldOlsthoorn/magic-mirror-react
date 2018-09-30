@@ -1,13 +1,13 @@
 {
 	"header_left": [],
 	"header_center": [],
-	"header_right": [],
+	"header_right": [
+		"example-digital-clock"
+	],
 	"center_left": [],
 	"center_center": [],
 	"center_right": [],
 	"footer_left": [],
 	"footer_center": [],
-	"footer_right": [
-		"digital-clock"
-	]
+	"footer_right": []
 }
