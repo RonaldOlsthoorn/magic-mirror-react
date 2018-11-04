@@ -4,9 +4,9 @@
 	"header_right": [
 		"example-digital-clock"
 	],
-	"center_left": [],
-	"center_center": [],
-	"center_right": [],
+	"main_left": ["calendar"],
+	"main_center": ["compliments"],
+	"main_right": [],
 	"footer_left": [],
 	"footer_center": [],
 	"footer_right": []

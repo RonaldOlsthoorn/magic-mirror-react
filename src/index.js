@@ -22,19 +22,19 @@ layout_config.header_right.forEach(function(module_name){
     ReactDOM.render(<Module />, document.getElementById('header-right'))
 })
 
-layout_config.center_left.forEach(function(module_name){
+layout_config.main_left.forEach(function(module_name){
     var Module = require('./modules/' + module_name).default
-    ReactDOM.render(<Module />, document.getElementById('center-left'))
+    ReactDOM.render(<Module />, document.getElementById('main-left'))
 })
 
-layout_config.center_center.forEach(function(module_name){
+layout_config.main_center.forEach(function(module_name){
     var Module = require('./modules/' + module_name).default
-    ReactDOM.render(<Module />, document.getElementById('center-center'))
+    ReactDOM.render(<Module />, document.getElementById('main-center'))
 })
 
-layout_config.center_right.forEach(function(module_name){
+layout_config.main_right.forEach(function(module_name){
     var Module = require('./modules/' + module_name).default
-    ReactDOM.render(<Module />, document.getElementById('center-right'))
+    ReactDOM.render(<Module />, document.getElementById('main-right'))
 })
 
 layout_config.footer_left.forEach(function(module_name){
