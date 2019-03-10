@@ -1,6 +1,6 @@
-FROM node:8
+### STAGE 1: Build ###
+FROM node:8-alpine as build
 
-# Create app directory
 WORKDIR /usr/src/app
 
 # Install app dependencies
@@ -15,5 +15,10 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
-CMD [ "npm", "start" ]
+RUN npm run build
+
+### STAGE 2: Production Environment ###
+FROM nginx:1.13.12-alpine
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
