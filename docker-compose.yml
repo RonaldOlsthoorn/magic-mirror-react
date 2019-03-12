@@ -1,0 +1,15 @@
+version: '3'
+services:
+  front-end: 
+    build: .
+    container_name: front-end
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+
+  twitter: 
+    image: ../magic-mirror-twitter/
+    container_name: twitter
+    expose:
+      - "5050"
