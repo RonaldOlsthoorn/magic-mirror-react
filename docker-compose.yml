@@ -5,11 +5,14 @@ services:
     container_name: front-end
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+    expose:
+      - 3000
     ports:
-      - 80:80
+      - 3000:80
 
   twitter: 
-    image: ../magic-mirror-twitter/
+    build: ../magic-mirror-twitter/
     container_name: twitter
+    env_file: ../magic-mirror-twitter/.env
     expose:
-      - "5050"
+      - 5050
